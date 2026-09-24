@@ -1,4 +1,11 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
-  "mcpServers": { "fixture-server": { "url": "https://example.com/mcp" } }
+  "mcpServers": {
+    "fixture-server": { "url": "https://example.com/mcp" },
+    "fixture-stripe": {
+      "type": "http",
+      "url": "https://mcp.stripe.com",
+      "headers": { "Authorization": "Bearer ${STRIPE_SECRET_KEY}" }
+    }
+  }
 }
