@@ -6,6 +6,11 @@
       "type": "http",
       "url": "https://mcp.stripe.com",
       "headers": { "Authorization": "Bearer ${STRIPE_SECRET_KEY}" }
+    },
+    "fixture-custom-auth": {
+      "type": "http",
+      "url": "https://mcp.fixture-e2e-test.example.com",
+      "headers": { "Authorization": "Bearer ${PLACEHOLDER}" }
     }
   }
 }
